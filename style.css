@@ -1,0 +1,499 @@
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+
+ }
+
+ body {
+     background-color: black;
+ }
+
+ .main {
+     background-image: url("assets/images/bg.jpg");
+     height: 65vh;
+     position: relative;
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: max(1100px, 100vw);
+ }
+
+ .main .box {
+     height: 65vh;
+     width: 100%;
+     opacity: 0.75;
+     background-color: black;
+     position: absolute;
+     top: 0%;
+ }
+
+ nav {
+     display: flex;
+     max-width: 60vw;
+     justify-content: space-between;
+     align-items: center;
+     margin: auto;
+     height: 65px;
+ }
+
+ nav img {
+     width: 150px;
+     position: relative;
+     z-index: 10;
+ }
+
+ nav button {
+     position: relative;
+     z-index: 10;
+ }
+
+
+ .hero {
+     height: calc(100% - 125px);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     color: white;
+     position: relative;
+     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+     gap: 23px;
+     max-width: 600px;
+     margin: auto;
+     padding: 30px;
+ }
+
+ .hero> :nth-child(1) {
+     font-weight: 900;
+     font-size: 40px;
+     text-align: center;
+     text-align: center;
+ }
+
+ @media (max-width: 768px) {
+
+     .hero> :nth-child(1) {
+         font-size: 35px;
+         font-weight: 700;
+     }
+
+ }
+
+ .hero> :nth-child(2) {
+     font-size: 20px;
+     font-weight: 500;
+     text-align: center;
+ }
+
+ .hero> :nth-child(3) {
+     text-align: center;
+     font-size: 1rem;
+     font-weight: 600;
+     line-height: 1.5;
+     text-align: center;
+ }
+
+ .sepline {
+     height: 4px;
+     background-color: rgb(62, 62, 62);
+     padding: 0;
+
+ }
+
+ .btn-rd-sm {
+     background-color: red;
+     color: white;
+     padding: 6px 13px;
+     font-size: 18px;
+     font-weight: 600;
+     cursor: pointer;
+     border-radius: 0.25rem;
+     border: none;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ .btn-a {
+     font-weight: bold;
+     background-color: rgba(16, 16, 16, 0.8);
+     color: white;
+     border: 1px solid rgb(255, 253, 253, 0.3);
+     padding: 8px 11px;
+     border-radius: 4px;
+     font-size: medium;
+     cursor: pointer;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+
+ .btn-a svg {
+     padding: 0px 15px 0px 0px;
+ }
+
+ .btn-rd {
+     background-color: red;
+     color: white;
+     font-weight: 700;
+     padding: 15px 45px;
+     font-size: 18px;
+     border-radius: 5px;
+     border: none;
+ }
+
+ .eg {
+     max-width: 550px;
+     align-items: center;
+ }
+
+
+ .main input {
+     color: white;
+     padding: 15px 75px 15px 15px;
+     font-size: 18px;
+     font-weight: bolder;
+     border-radius: 5px;
+     border: none;
+     background-color: rgba(16, 16, 16, 0.8);
+     border: 1px solid rgb(255, 253, 253, 0.2);
+ }
+
+ @media screen and (max-width:1300px) {
+     nav {
+         max-width: 95vw;
+     }
+
+     nav img {
+         width: 110px;
+         padding-left: 5px;
+     }
+
+     .btn-a {
+         padding: 5px 0px;
+         padding-right: 0px;
+         margin-left: -45px;
+         font-size: 12px;
+     }
+
+     .btn-a svg {
+         padding-left: 5px;
+     }
+
+     .btn-rd-sm {
+         padding: 5px 10px;
+     }
+
+     .main input {
+         margin-left: 55px;
+         padding: 15px 25px 15px 15px;
+     }
+
+     .btn-rd {
+         margin-top: 15px;
+         margin-left: 120px;
+         padding: 10px 15px;
+     }
+
+     .eg {
+         max-width: 540px;
+         align-items: center;
+         margin-right: 50px;
+     }
+ }
+
+ .first {
+     display: flex;
+     justify-content: center;
+     max-width: 70vw;
+     margin: auto;
+     color: white;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .secImg {
+     position: relative;
+ }
+
+ .secImg img {
+     width: 555px;
+     position: relative;
+     z-index: 10;
+ }
+
+ .secImg video {
+     position: absolute;
+     top: 120px;
+     right: 76px;
+     width: 405px;
+ }
+
+ .thirdImg {
+     position: relative;
+ }
+
+ .thirdImg img {
+     width: 555px;
+     position: relative;
+     z-index: 10;
+ }
+
+ .thirdImg video {
+     position: absolute;
+     top: 51px;
+     right: 0;
+     width: 555px;
+ }
+
+
+ section.first>div {
+     display: flex;
+     flex-direction: column;
+     padding: 34px 0px;
+ }
+
+ section.first>div :nth-child(1) {
+     font-weight: 900;
+     font-size: 30px;
+     margin-bottom: 10px;
+ }
+
+ section.first>div :nth-child(2) {
+     font-weight: 400;
+     font-size: 18px;
+ }
+
+
+
+ .feq {
+     background-color: black;
+     color: white;
+     max-width: 60vw;
+     margin: auto;
+ }
+
+ .feq h2 {
+     padding: 25px;
+     padding-bottom: 20px;
+     text-align: center;
+     font-size: 36px;
+ }
+
+ .feqbox:hover {
+     background-color: #414141;
+     transition: all 0.5s ease-in-out;
+ }
+
+ .feqbox {
+     display: flex;
+     font-size: 24px;
+     justify-content: space-between;
+     background-color: #2d2d2d;
+     padding: 18px;
+     font-weight: 500;
+     margin: 7px auto;
+     cursor: pointer;
+     color: white;
+ }
+
+ .leg {
+     display: flex;
+     justify-content: center;
+     max-width: 890px;
+     margin: auto;
+     padding-top: 15px;
+     padding-bottom: 15px;
+ }
+
+ .leg input {
+     color: white;
+     padding: 15px 175px 15px 15px;
+     font-size: 18px;
+     font-weight: bolder;
+     border-radius: 5px;
+     border: none;
+     background-color: rgba(16, 16, 16, 0.8);
+     border: 1px solid rgb(255, 253, 253, 0.2);
+     margin-right: 5px;
+ }
+
+ @media screen and (max-width:1300px) {
+     .leg {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         max-width: 265px;
+         margin: auto;
+     }
+
+     .leg input {
+         max-height: 15px;
+         padding: 15px;
+     }
+
+     .leg .btn-rd {
+         padding: 10px 10px;
+         margin: auto;
+         margin-top: 8px;
+     }
+
+     .feqbox:hover {
+         background-color: #414141;
+         transition: all 0.5s ease-in-out;
+     }
+ }
+
+ .content {
+     display: flex;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     padding-top: 25px;
+     padding-bottom: 15px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ footer {
+     color: white;
+     margin: auto;
+     max-width: 60vw;
+     padding: 30px;
+ }
+
+
+ footer .question {
+     margin: auto;
+     color: rgba(255, 255, 255, 0.7);
+     padding-top: 34px 0px;
+     padding-bottom: 10px;
+     margin-bottom: 32px;
+     font-weight: 500;
+ }
+
+ .footer {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     margin-bottom: 45px;
+     font-weight: 500;
+ }
+
+ @media screen and (max-width: 1300px) {
+
+     .first {
+         flex-wrap: wrap;
+     }
+
+     .secImg img {
+         width: 345px;
+         padding-right: 0px;
+     }
+
+     .secImg video {
+         width: 300px;
+         top: 60px;
+         right: 0px;
+         padding-right: 0px;
+     }
+
+     .thirdImg img {
+         width: 305px;
+         padding-right: 0px;
+     }
+
+     .thirdImg video {
+         width: 305px;
+         padding-right: 0px;
+     }
+
+     .fourthImg img {
+         width: 350px;
+
+     }
+
+     .feq h2 {
+         font-size: 20px;
+         font-weight: 700;
+     }
+
+     .feq .feqbox {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         padding: 15px;
+         font-size: 16px;
+         font-weight: 400;
+     }
+
+ }
+
+ @media screen and (max-width:1300px) {
+     .footer {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         margin-bottom: 45px;
+         font-weight: 500;
+         gap: 45px;
+         margin-left: -45px;
+     }
+
+     .feq .feqbox {
+         font-size: 16px;
+         font-weight: 400;
+         padding: 5px;
+     }
+
+     .feq svg {
+         width: 20px;
+         fill: blue;
+     }
+ }
+
+ .footer a {
+     color: rgba(255, 255, 255, 0.7);
+     text-decoration-color: rgba(255, 255, 255, 0.7);
+     cursor: pointer;
+     text-decoration: underline;
+     font-size: 14px;
+     gap: 25px;
+ }
+
+ .footer-item {
+     display: flex;
+     flex-direction: column;
+     gap: 23px;
+     line-height: 3px;
+
+ }
+
+ @media screen and (max-width:1300px) {
+     .content {
+
+         max-width: 260px;
+         margin: auto;
+     }
+ }
+
+ @media screen and (max-width:1300px) {
+
+
+     .footer-item {
+         width: 145px
+     }
+
+     .last .content {
+         max-width: 260px;
+         margin: auto;
+     }
+
+     footer .question {
+         margin-left: -45px;
+     }
+
+     .last {
+         font-size: 14px;
+         font-weight: 500;
+         color: rgba(255, 255, 255, 0.7);
+         margin-top: 25px;
+         margin-left: -44px;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+ }
